@@ -23,7 +23,7 @@
 				}
 			}
 			
-			if(!isset($_GET['page']))
+			if(!isset($_GET['page']) AND $_GET ['page']> 0)
 			{
 				$page=1;
 			}
@@ -56,12 +56,12 @@
 			}
 			else
 			{
-				$nbcomm=mysqli_num_rows($res); // Retourne le nombre de lignes dans un résultat. 
-				$nbpages=ceil($nbcomm/$commparpage); /*Ceil arrondit a l'entier supérieur*/
+				$nbcomm=mysqli_num_rows($res); // Retourne le nombre de lignes dans un rÃ©sultat. 
+				$nbpages=ceil($nbcomm/$commparpage); /*Ceil arrondit a l'entier supÃ©rieur*/
 				echo "<br> Pages : ";
 				echo "<a href='commentaires.php?page=1'> << </a>";
 				echo "<a href='commentaires.php?page=".($page-1)."'> < </a>";
-				for($i=($page-2);$i<=($page+2);$i++)
+				for($i=1;$i<=$nbpages;$i++)
 				{
 					echo "<a href='commentaires.php?page=$i'> $i </a>";
 				}
@@ -70,4 +70,4 @@
 			echo "<a href='commentaires.php?page=$nbpages'> >> </a>";
 			
 			mysqli_close($lien);
-		?>																			
+		?>			
