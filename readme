@@ -1,0 +1,13 @@
+<h1>TP Architecture</h1>
+
+<h2>Qui a fait le projet ? </h2> 
+<p> C'est un projet réalisé par notre Professeur Mr Linck, le but étant de régler un problème de pagination sur le "commentaires.php".</p>
+
+<h2>Origine</h2>
+<p>C'est un devoir de classe.</p>
+
+<h2>Qu'est ce que c'est ?</h2>
+<p> C'est une page où on peut écrire un commentaire avec son nom et son contenu, il peut contenir 3 commentaires par page. Le problème se situant dans la pagination car des pages contenant aucun commentaire apparaissent et des pages négatives également.</p>
+
+<h2>Progression</h2>
+<p>Le problème de pagination étant réglé normalement sur ce point il n'y a pas de modification à effectuer. </p>
